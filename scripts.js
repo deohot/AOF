@@ -222,6 +222,67 @@ function updateActiveSlide() {
       prevSlide();
     }
   });
+
+  // Scroll to Top functionality
+(function initScrollToTop() {
+  const scrollToTopBtn = document.querySelector('.scroll-to-top');
+  if (!scrollToTopBtn) return;
+  
+  const scrollThreshold = 300; // Show button after scrolling 300px
+  let lenisInstance = null;
+  
+  // Try to get Lenis instance if available
+  function getLenisInstance() {
+    if (typeof Lenis !== 'undefined' && window.lenis) {
+      return window.lenis;
+    }
+    return null;
+  }
+  
+  // Function to check scroll position and show/hide button
+  function checkScrollPosition() {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    
+    if (scrollY > scrollThreshold) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  }
+  
+  // Function to scroll to top
+  function scrollToTop() {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    lenisInstance = getLenisInstance();
+    
+    if (prefersReduced || !lenisInstance) {
+      // Fallback for reduced motion or no Lenis
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Use Lenis for smooth scrolling
+      lenisInstance.scrollTo(0, { duration: 1.1 });
+    }
+  }
+  
+  // Event listeners
+  scrollToTopBtn.addEventListener('click', scrollToTop);
+  
+  // Check scroll position on load and scroll
+  window.addEventListener('load', checkScrollPosition);
+  window.addEventListener('scroll', checkScrollPosition);
+  
+  // Also check when Lenis finishes scrolling (if available)
+  if (typeof Lenis !== 'undefined') {
+    // Wait a bit for Lenis to initialize
+    setTimeout(() => {
+      lenisInstance = getLenisInstance();
+      if (lenisInstance) {
+        lenisInstance.on('scroll', checkScrollPosition);
+      }
+    }, 100);
+  }
+})();
+
   
   // Handle window resize
   window.addEventListener('resize', () => {
