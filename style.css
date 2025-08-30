@@ -112,13 +112,6 @@ body {
 }
 .hero-subtitle { color: var(--muted); margin: 0 0 24px; font-size: clamp(16px, 2.2vw, 18px); }
 
-.scroll-cue {
-  position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
-  width: 22px; height: 34px; border: 2px solid var(--muted); border-radius: 14px; opacity: .7;
-}
-.scroll-cue::after { content: ""; position: absolute; left: 50%; top: 6px; transform: translateX(-50%); width: 4px; height: 8px; background: var(--muted); border-radius: 2px; animation: cue 1.6s ease infinite; }
-@keyframes cue { 0%{opacity:0; transform:translate(-50%,0)} 40%{opacity:1} 100%{opacity:0; transform:translate(-50%,10px)} }
-
 /* Sections */
 .section { padding: 72px 0; }
 .section.alt { background: linear-gradient(180deg, transparent, rgba(255,255,255,.02)); }
