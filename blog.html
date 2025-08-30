@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog - Art of Fitness</title>
+    <meta name="description" content="Blog o fitnessu, treningu i zdravom načinu života.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <div class="brand glitch" data-text="Art of fitness" style="font-size: 36px;">Art of fitness</div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pricing">Cjenik</a></li>
+            <li><a href="index.html#trainers">Treneri</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="index.html#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <div class="container">
+        <h1 class="blog-title reveal">Blog</h1>
+        <p class="blog-subtitle reveal">Savjeti, vijesti i sve što trebate znati o fitnessu</p>
+      </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="blog-grid" id="blogGrid">
+          <!-- Blog posts will be loaded here by JavaScript -->
+          <div class="loading-placeholder">
+            <p>Učitavanje blog postova...</p>
+          </div>
+        </div>
+        
+        <!-- Fallback content if JavaScript fails -->
+        <noscript>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="blog-card-media">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop" alt="Trening snage" />
+              </div>
+              <div class="blog-card-body">
+                <p class="blog-card-date">15. siječnja 2024.</p>
+                <h3 class="blog-card-title">Kako započeti s treningom snage</h3>
+                <p class="blog-card-excerpt">Vodič za početnike koji žele graditi snagu i mišićnu masu.</p>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-card-media">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop" alt="Prehrana" />
+              </div>
+              <div class="blog-card-body">
+                <p class="blog-card-date">10. siječnja 2024.</p>
+                <h3 class="blog-card-title">Prehrana za izgradnju mišića</h3>
+                <p class="blog-card-excerpt">Otkrivamo tajne pravilne prehrane za maksimalnu izgradnju mišića.</p>
+              </div>
+            </article>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Back to Home -->
+    <section class="section alt">
+      <div class="container text-center">
+        <a href="index.html" class="btn btn-outline">← Povratak na početnu</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-brand">Art of Fitness</h3>
+          <p class="muted">Zagorska ul. 42A, 42220, Novi Marof</p>
+          <p class="muted">info@artoffitness.hr · +385 91 123 4567</p>
+        </div>
+        <div>
+          <h4>Linkovi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pricing">Cjenik</a></li>
+            <li><a href="index.html#trainers">Treneri</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Društvene mreže</h4>
+          <div class="socials">
+            <a href="#" aria-label="Instagram" class="social">IG</a>
+            <a href="#" aria-label="Facebook" class="social">FB</a>
+            <a href="#" aria-label="TikTok" class="social">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p class="muted">© <span id="year"></span> Art of Fitness. Sva prava pridržana.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>

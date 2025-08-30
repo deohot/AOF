@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GymXtreme</title>
+    <meta name="description" content="GymXtreme – moderna teretana za sve razine.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <div class="brand glitch" data-text="Art of fitness" style="font-size: 36px;">Art of fitness</div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Otvori navigaciju" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pricing">Cjenik</a></li>
+            <li><a href="#trainers">Treneri</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Motivacijska pozadinska slika"></div>
+      <div class="container hero-content reveal">
+        <h1 class="hero-title glitch" data-text="Pridruži nam se danas">Pridruži nam se danas</h1>
+        <p class="hero-subtitle">Tvoje novo poglavlje snage, izdržljivosti i zdravlja počinje ovdje.</p>
+        <a class="btn btn-primary" href="#pricing">Kreni sada</a>
+      </div>
+      <a href="#hours" class="scroll-cue" aria-label="Scroll na radno vrijeme"></a>
+    </section>
+
+ 
+
+    <!-- Zašto baš mi? -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <h2 class="section-title reveal">Zašto baš mi?</h2>
+        <p class="muted benefits-intro reveal">Naša misija je da tvoj put do cilja bude brži, sigurniji i održiv.</p>
+        <div class="cards grid-3">
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">🏋️</div>
+            <h3>200+ zadovoljnih klijenata</h3>
+            <p class="muted">Dokaz iskustva i rezultata koji traju.</p>
+          </article>
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">⏳</div>
+            <h3>Višegodišnje iskustvo</h3>
+            <p class="muted">Rad sa različitim tipovima klijenata i ciljevima.</p>
+          </article>
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">🥇</div>
+            <h3>Individualni pristup</h3>
+            <p class="muted">Svaki plan se prilagođava tvojoj situaciji.</p>
+          </article>
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">🎯</div>
+            <h3>Jasni ciljevi, brži rezultati</h3>
+            <p class="muted">Fokus na ono što ti je zaista bitno.</p>
+          </article>
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">💬</div>
+            <h3>Kontinuirana podrška</h3>
+            <p class="muted">Praćenje napretka i stalna motivacija.</p>
+          </article>
+          <article class="card benefit reveal" data-tilt>
+            <div class="icon-badge" aria-hidden="true">⚡</div>
+            <h3>Praktične i održive metode</h3>
+            <p class="muted">Bez „čarobnih rješenja“, samo provjerene strategije.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Treneri -->
+    <section class="section" id="trainers">
+      <div class="container">
+        <h2 class="section-title reveal">Treneri</h2>
+        <div class="cards grid-2">
+          <article class="card trainer reveal tilt-card" data-tilt>
+            <div class="trainer-media">
+              <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1200&auto=format&fit=crop" alt="Trener Luka" loading="lazy" />
+            </div>
+            <div class="trainer-body">
+              <h3>Luka Horvat</h3>
+              <p class="muted">S&C Coach</p>
+              <p>Specijaliziran za snagu i kondiciju, radi s rekreativcima i sportašima.</p>
+            </div>
+          </article>
+          <article class="card trainer reveal tilt-card" data-tilt>
+            <div class="trainer-media">
+              <img src="https://images.unsplash.com/photo-1546484959-f9a53db89f9e?q=80&w=1200&auto=format&fit=crop" alt="Trenerica Mia" loading="lazy" />
+            </div>
+            <div class="trainer-body">
+              <h3>Mia Kovač</h3>
+              <p class="muted">Functional Trainer</p>
+              <p>Usmjerena na funkcionalne pokrete i mobilnost, personalizirani pristup.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container">
+        <h2 class="section-title reveal">Često postavljena pitanja</h2>
+        <div class="faq-container">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Mogu li doći na probni trening bez obaveze?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Da li radite i s početnicima / starijim osobama / sportašima?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Da li je prvi trening besplatan?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Trebam li imati prethodno iskustvo u treningu?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Šta trebam ponijeti na trening?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+       <!-- Radno vrijeme -->
+    <section class="section" id="hours">
+      <div class="container">
+        <h2 class="section-title reveal">Radno vrijeme</h2>
+        <div class="table-wrap reveal">
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Dan</th>
+                <th>Vrijeme</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ponedjeljak</td><td>06:00 – 22:00</td></tr>
+              <tr><td>Utorak</td><td>06:00 – 22:00</td></tr>
+              <tr><td>Srijeda</td><td>06:00 – 22:00</td></tr>
+              <tr><td>Četvrtak</td><td>06:00 – 22:00</td></tr>
+              <tr><td>Petak</td><td>06:00 – 22:00</td></tr>
+              <tr><td>Subota</td><td>08:00 – 20:00</td></tr>
+              <tr><td>Nedjelja</td><td>08:00 – 18:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cjenik -->
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <h2 class="section-title reveal">Cjenik</h2>
+        <div class="carousel-container">
+          <button class="carousel-arrow carousel-arrow--left" aria-label="Prethodna kartica">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          
+          <div class="carousel">
+            <div class="carousel-track">
+<article class="carousel-slide card pricing reveal" data-tilt>
+                <h3>Test Basic</h3>
+                <p class="price">€10/mj</p>
+                <ul class="features">
+                  <li>Osnovni pristup teretani</li>
+                  <li>Probni period</li>
+                  <li>Ograničeno vrijeme</li>
+                </ul>
+                <a class="btn btn-outline" href="#contact">Odaberi</a>
+              </article>
+<article class="carousel-slide card pricing reveal" data-tilt>
+                <h3>Basic</h3>
+                <p class="price">€25/mj</p>
+                <ul class="features">
+                  <li>Neograničen pristup teretani</li>
+                  <li>Besplatna inicijalna procjena</li>
+                  <li>Pristup lockerima</li>
+                </ul>
+                <a class="btn btn-outline" href="#contact">Odaberi</a>
+              </article>
+<article class="carousel-slide card pricing featured reveal" data-tilt>
+                <div class="badge">Najpopularnije</div>
+                <h3>Pro</h3>
+                <p class="price">€40/mj</p>
+                <ul class="features">
+                  <li>Sve iz Basic paketa</li>
+                  <li>Grupni treninzi</li>
+                  <li>Popusti na suplemente</li>
+                </ul>
+                <a class="btn btn-primary" href="#contact">Odaberi</a>
+              </article>
+<article class="carousel-slide card pricing reveal" data-tilt>
+                <h3>Elite</h3>
+                <p class="price">€65/mj</p>
+                <ul class="features">
+                  <li>Sve iz Pro paketa</li>
+                  <li>1x tjedno personalni trening</li>
+                  <li>Plan prehrane</li>
+                </ul>
+                <a class="btn btn-outline" href="#contact">Odaberi</a>
+              </article>
+<article class="carousel-slide card pricing reveal" data-tilt>
+                <h3>Test Premium</h3>
+                <p class="price">€100/mj</p>
+                <ul class="features">
+                  <li>Sve iz Elite paketa</li>
+                  <li>Neograničeni personalni treninzi</li>
+                  <li>Premium loker i usluge</li>
+                  <li>24/7 pristup</li>
+                </ul>
+                <a class="btn btn-primary" href="#contact">Odaberi</a>
+              </article>
+
+<article class="carousel-slide spacer"></article>
+
+
+            </div>
+          </div>
+          
+          <button class="carousel-arrow carousel-arrow--right" aria-label="Sljedeća kartica">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kako do nas -->
+    <section class="section" id="location">
+      <div class="container">
+        <h2 class="section-title reveal">Kako do nas</h2>
+        <div class="map-container reveal">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8!2d16.3333!3d46.1667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768a8b8b8b8b8b8%3A0x8b8b8b8b8b8b8b8!2sZagorska+ul.+42A%2C+42220%2C+Novi+Marof!5e0!3m2!1shr!2shr!4v1234567890"
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokacija teretane - Zagorska ul. 42A, Novi Marof">
+          </iframe>
+        </div>
+        <div class="location-info reveal">
+          <p class="muted">Zagorska ul. 42A, 42220, Novi Marof</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Kontakt / Footer -->
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-brand">GymXtreme</h3>
+          <p class="muted">Savska 10, Zagreb</p>
+          <p class="muted">info@gymxtreme.hr · +385 91 123 4567</p>
+        </div>
+        <div>
+          <h4>Linkovi</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pricing">Cjenik</a></li>
+            <li><a href="#trainers">Treneri</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Društvene mreže</h4>
+          <div class="socials">
+            <a href="#" aria-label="Instagram" class="social">IG</a>
+            <a href="#" aria-label="Facebook" class="social">FB</a>
+            <a href="#" aria-label="TikTok" class="social">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p class="muted">© <span id="year"></span> GymXtreme. Sva prava pridržana.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+
