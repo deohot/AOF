@@ -178,6 +178,59 @@ body {
 .trainer-body h3 { margin: 14px 0 4px; }
 .muted { color: var(--muted); }
 
+/* Services */
+.services {
+  margin-top: 40px;
+}
+
+.service-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.service-text p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.service-image {
+  flex: 1;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 720px) {
+  .service-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .service-row.reverse {
+    flex-direction: column;
+  }
+}
+
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 18px; border-radius: 12px; text-decoration: none; font-weight: 700; letter-spacing: .3px; transition: transform .18s ease, background .2s ease, box-shadow .2s ease; will-change: transform; }
 .btn:active { transform: translateY(1px) scale(.99); }
