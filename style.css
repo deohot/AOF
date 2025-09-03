@@ -219,6 +219,12 @@ body {
   height: auto;
   border-radius: 12px;
   box-shadow: var(--shadow);
+  transition: transform .5s ease, box-shadow .25s ease;
+}
+
+.service-image img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 16px 40px #dca11d;
 }
 
 @media (max-width: 720px) {
