@@ -115,19 +115,41 @@ document.getElementById('year').textContent = new Date().getFullYear();
   const slides = pricingContainer.querySelectorAll('.carousel-slide');
   const prevBtn = pricingContainer.querySelector('.carousel-arrow--left');
   const nextBtn = pricingContainer.querySelector('.carousel-arrow--right');
+  const dotsContainer = pricingContainer.querySelector('.carousel-dots');
 
-  if (!carousel || !track || !slides.length || !prevBtn || !nextBtn) return;
-  
+  if (!carousel || !track || !slides.length || !prevBtn || !nextBtn || !dotsContainer) return;
+
   let currentIndex = 0;
   let slideWidth = slides[0].offsetWidth + 22; // width + gap
   const totalSlides = slides.length;
+
+  // Create dots
+  const numDots = totalSlides - 1; // exclude spacer
+  for(let i = 0; i < numDots; i++){
+    const dot = document.createElement('button');
+    dot.classList.add('carousel-dot');
+    dot.setAttribute('aria-label', `Idi na karticu ${i+1}`);
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  // Set initial active dot to index 1 (second dot)
+  currentIndex = 1;
+  updateCarousel();
   
   // Update carousel position
   function updateCarousel() {
     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     updateArrowStates();
-      updateActiveSlide(); // <--- dodano
-
+    updateActiveSlide(); // <--- dodano
+    // Update dots
+    const dots = dotsContainer.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentIndex);
+    });
   }
   
   // Update arrow states
