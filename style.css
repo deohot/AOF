@@ -634,3 +634,125 @@ body {
 * {
   scrollbar-color: var(--accent) var(--panel);
 }
+
+/* Testimonials Section */
+.testimonials-carousel .carousel {
+  overflow: visible;
+}
+
+.testimonials-carousel .carousel-track {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.testimonials-carousel .carousel-slide {
+  flex: 0 0 250px; /* Smaller width for testimonials */
+  min-width: 250px;
+}
+
+#testimonials .carousel-slide.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(180deg, var(--card), #0e141a);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+#testimonials .testimonial-profile {
+  width: 80px; /* Smaller profile image */
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+  margin-bottom: 12px;
+}
+
+#testimonials .testimonial-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#testimonials h3 {
+  margin: 8px 0 6px;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 16px; /* Smaller font */
+}
+
+#testimonials p {
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-size: 14px; /* Smaller font */
+}
+
+#testimonials .stars {
+  font-size: 18px; /* Smaller stars */
+  color: #dca11d; /* Zlatna boja za zvjezdice */
+  user-select: none;
+}
+
+#testimonials .carousel-slide.testimonial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px var(--accent);
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+}
+
+.mma-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.mma-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px var(--accent);
+}
+
+.mma-block img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.image-text {
+  flex-direction: row;
+}
+
+.text-image {
+  flex-direction: row-reverse;
+}
+
+.mma-block .text p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .mma-block {
+    flex-direction: column;
+  }
+  .text-image {
+    flex-direction: column;
+  }
+  .mma-block img {
+    width: 100%;
+    height: auto;
+  }
+}

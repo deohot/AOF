@@ -105,14 +105,17 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 })();
 
-// Carousel functionality
-(function initCarousel() {
-  const carousel = document.querySelector('.carousel');
-  const track = document.querySelector('.carousel-track');
-  const slides = document.querySelectorAll('.carousel-slide');
-  const prevBtn = document.querySelector('.carousel-arrow--left');
-  const nextBtn = document.querySelector('.carousel-arrow--right');
-  
+// Carousel functionality for pricing
+(function initPricingCarousel() {
+  const pricingContainer = document.querySelector('.pricing-carousel');
+  if (!pricingContainer) return;
+
+  const carousel = pricingContainer.querySelector('.carousel');
+  const track = pricingContainer.querySelector('.carousel-track');
+  const slides = pricingContainer.querySelectorAll('.carousel-slide');
+  const prevBtn = pricingContainer.querySelector('.carousel-arrow--left');
+  const nextBtn = pricingContainer.querySelector('.carousel-arrow--right');
+
   if (!carousel || !track || !slides.length || !prevBtn || !nextBtn) return;
   
   let currentIndex = 0;
